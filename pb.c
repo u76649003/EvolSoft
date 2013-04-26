@@ -28,6 +28,11 @@ static int my_sort_func(const void* p1, const void* p2)
 	 }
  }
 
+void checkballs()
+{
+  //Comprobando que las bolas son diferentes
+}
+
 int whiteballs_computer_generated()
 {
   return rand()%59+1;
@@ -93,6 +98,7 @@ int main(int argc, char** argv)
     if (6 != count_balls)
     {
       balls[1]=whiteballs_computer_generated();
+      checkballs();
       balls[2]=powerball_computer_generated();
     }
 
