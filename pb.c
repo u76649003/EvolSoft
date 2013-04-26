@@ -117,3 +117,4 @@ int main(int argc, char** argv)
     fprintf(stderr, "Usage: %s [-favourite] (5 white balls) power_ball\n", argv[0]);
     return -1;
 }
+/* fin de programa */
