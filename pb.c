@@ -116,4 +116,6 @@ int main(int argc, char** argv)
     usage_error:
     fprintf(stderr, "Usage: %s [-favourite] (5 white balls) power_ball\n", argv[0]);
     return -1;
+
+    printf("Your sorted numbers: \n");
 }
