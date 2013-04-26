@@ -28,6 +28,15 @@ static int my_sort_func(const void* p1, const void* p2)
 	 }
  }
 
+int whiteballs_computer_generated()
+{
+  return rand()%59+1;
+}
+
+int powerball_computer_generated()
+{
+  return rand()%39+1;
+}
 
 int calculate_result(int white_balls[5], int power_ball)
 {
@@ -83,7 +92,8 @@ int main(int argc, char** argv)
 
     if (6 != count_balls)
     {
-        goto usage_error;
+      balls[1]=whiteballs_computer_generated();
+      balls[2]=powerball_computer_generated();
     }
 
     // the power ball is always the last one given
